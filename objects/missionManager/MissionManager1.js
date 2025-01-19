@@ -7,7 +7,7 @@ export default class MissionManager1 extends BaseMissionManager {
         this.missionCompleted = false;
         this.bombsDestroyed = 0;
         this.swatsDestroyed = 0;
-        this.requiredDestroys = 100;
+        this.requiredDestroys = 10;
         this.firstConditionMet = false;
     }
 

@@ -26,16 +26,7 @@ export default class StartScene extends SceneSkipManager {
         // Adjust the background to cover the entire scene
         this.background.displayWidth = this.sys.game.config.width;
         this.background.displayHeight = this.sys.game.config.height;
-
-        // //  A simple background for our game
-        // let background = this.add.image(width / 2, height / 2, 'background');        
         
-        // // Scale the background to cover the entire canvas
-        // let scaleX = width / background.width;
-        // let scaleY = height / background.height;
-        // let scale = Math.max(scaleX, scaleY);
-        // background.setScale(scale);
-
         // create the martialLaw object
         this.martialLawDeclared = new MartialLaw(this, width/2, width/3); 
         

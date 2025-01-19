@@ -10,7 +10,7 @@ export default class MartialLaw extends Phaser.Physics.Arcade.Sprite {
 
     initializeDialogue() {
         if (!this.dialogueInitialized) {
-            this.showDialogue("2024년 12월 3일\n대한민국에 비상 계엄을 선포한다\n-대통령 윤석렬-\nMartial Law\nDeclared in Korea!!!", () => {
+            this.showDialogue("2024년 12월 3일\n대한민국에 비상 계엄을 선포한다\n-대통령 트럼프-\nMartial Law\nDeclared in Korea!!!", () => {
                 console.log("Dialogue finished");
                 // You can add any additional logic here
             });
@@ -33,19 +33,5 @@ export default class MartialLaw extends Phaser.Physics.Arcade.Sprite {
         this.dialogueText = this.scene.add.text(this.x - 190, this.y + 125, text, textConfig);
         this.dialogueText.setOrigin(0, 0);
 
-        // this.scene.time.delayedCall(3000, () => {
-        //     this.scene.tweens.add({
-        //         targets: [this, this.dialogueText],
-        //         alpha: 0,
-        //         duration: 500,
-        //         onComplete: () => {
-        //             this.setVisible(false);
-        //             this.dialogueText.destroy();
-        //             if (callback) {
-        //                 callback();
-        //             }
-        //         }
-        //     });
-        // });
     }     
 }

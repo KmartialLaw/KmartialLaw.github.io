@@ -34,9 +34,10 @@ export default class GameScene1 extends BaseGameScene {
         this.background.setDepth(-1);
         
         // Apply new candlelight properties
-        this.candleLightScale = data?.candleLightScale || 0.2;
-        this.candleLightSpeed = data?.candleLightSpeed || 600;
-        this.fireRate = data?.fireRate || 600; // Set fire rate from data
+        this.candleLightScale = 0.4;
+        this.candleLightSpeed = 1000;
+        this.fireRate = 200;
+        // this.fireRate = data?.fireRate || 600; // Set fire rate from data
       
         // mission target initialized
         this.missionTarget1 = this.physics.add.sprite(this.width/2, this.height/5, 'getTogether');

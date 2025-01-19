@@ -40,9 +40,9 @@ export default class GameScene2 extends GameScene1 {
         this.backgroundForScene2.setAlpha(0.2);
         
         // Apply new candlelight properties
-        this.candleLightScale = 0.4;
+        this.candleLightScale = 0.6;
         this.candleLightSpeed = 1000;
-        this.fireRate = 300; // Set fire rate from data
+        this.fireRate = 150; // Set fire rate from data
 
         this.nextFire = 0;
 
